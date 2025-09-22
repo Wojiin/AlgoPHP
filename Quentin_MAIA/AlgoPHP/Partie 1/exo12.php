@@ -5,10 +5,10 @@
 <?php
 
 $tabUsers = array(
-    "Mickaël" => "FRA","Virgile" => "ESP","Marie-Claire" => "ENG");
+    "Mickaël" => "FRA","Virgile" => "ESP","Marie-Claire" => "ENG");//tableau contenant une clé et une variable dans chaque cellule
 
-function bonjour($prenom, $langue){
-    switch($langue){
+function bonjour($prenom, $langue){//crée une fonction paramétrée avec 2 variables
+    switch($langue){//Adapte la langue en fonction de la variable $langue
         case "FRA":
             echo "Salut $prenom<br>";
             break;
@@ -24,7 +24,7 @@ function bonjour($prenom, $langue){
     }
 }
 ksort($tabUsers);
-foreach($tabUsers as $prenom => $langue){
+foreach($tabUsers as $prenom => $langue){//boucle qui se sert du tableau pour saluer l'utilisateur en fonction de la langue entrée 
     bonjour($prenom, $langue);
 }
 ?>

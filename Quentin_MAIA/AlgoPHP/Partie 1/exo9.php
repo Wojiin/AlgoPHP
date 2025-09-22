@@ -7,9 +7,9 @@
 <?php
 
 function imposable($age, $sexe){
-    if ($sexe == "f" && $age >= 18 && $age <= 35) {
+    if ($sexe == "f" && $age >= 18 && $age <= 35) {//Si le sexe est féminin ET que son âge est égal ou supérieur à 18 ET que son âge est inférieur à 35
         echo "La personne est imposable";
-    } elseif ($sexe == "h" && $age >= 20) {
+    } elseif ($sexe == "h" && $age >= 20) {//Si le sexe est masculin ET que son âge est supérieur ou égal à 20
         echo "La personne est imposable";
     } else {
         echo "La personne n'est pas imposable";

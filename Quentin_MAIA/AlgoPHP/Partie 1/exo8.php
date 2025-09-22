@@ -14,7 +14,7 @@ $entier = 8;
 $mult = 1;
 $result = $mult * $entier;
 
-while($mult <= 10){
+while($mult <= 10){ //Tant que mult est inférieur ou égal à 10
 echo "$mult x $entier = $result";
 echo "<br>"; 
 $mult++;

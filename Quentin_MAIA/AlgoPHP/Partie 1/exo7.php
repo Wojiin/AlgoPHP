@@ -11,7 +11,7 @@ Si la catégorie n'est pas gérée, merci de le préciser. </p>
 <?php
 $age = 10;
 
-if ($age >= 6 && $age <= 7) {
+if ($age >= 6 && $age <= 7) { //Si l'âge est supérieur ou égal à 6 ET si âge est inférieur ou égal à 7
     $categorie = "Poussin";
 } elseif ($age >= 8 && $age <= 9) {
     $categorie = "Pupille";
