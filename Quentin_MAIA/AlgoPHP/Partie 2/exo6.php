@@ -10,10 +10,11 @@ $elements = ["Monsieur", "Madame", "Mademoiselle"];
 
 function alimenterListeDeroulante($elements) {
     echo "<select>"; //balise liste déroulante
-    foreach ($elements as $valeur) {
-        echo "<option>$valeur</option>";//balise des choix dans la liste déroulante
+    foreach ($elements as $civilite) {
+        echo "<option>$civilite</option>";//balise des choix dans la liste déroulante
     } 
     echo "</select>";
 }
 
 alimenterListeDeroulante($elements);
+
