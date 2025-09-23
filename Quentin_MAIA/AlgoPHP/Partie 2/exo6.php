@@ -2,15 +2,18 @@
 
 <p>Créer une fonction personnalisée permettant de remplir une liste déroulante à partir d'un tableau de valeurs. <br>
 Exemple: <br>
-$elements = ["Monsieur","Madame","Mademoiselle"]; <br>
-alimenterListeDeroulante($elements);</p>
-<h2>Résultat</h2>
-<?php
 $elements = ["Monsieur","Madame","Mademoiselle"];
-function alimenterListeDeroulante($elements){
-    echo "<input type=select><name>Civilité</name><label>Quelle est votre civilité ?</label>"foreach($elements as) 
-    echo"<option>$elements</option>
-    
-</input>"
-};
+</p>
+
+<?php
+$elements = ["Monsieur", "Madame", "Mademoiselle"];
+
+function alimenterListeDeroulante($elements) {
+    echo "<select>"; //balise liste déroulante
+    foreach ($elements as $valeur) {
+        echo "<option>$valeur</option>";//balise des choix dans la liste déroulante
+    } 
+    echo "</select>";
+}
+
 alimenterListeDeroulante($elements);
