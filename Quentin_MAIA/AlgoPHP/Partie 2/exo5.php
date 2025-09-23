@@ -8,7 +8,8 @@ afficherInput($nomsInput);</p>
 <?php
 $nomsInput = ["Nom","Prénom","Ville"];
 function afficherInput($nomsInput){
-echo foreach($nomsInput as $nom, $prenom, $ville){
-    echo "<label for=$nomInput>Nom</label><input type=text>;"};
+foreach($nomsInput as $noms){
+    echo "<label for=nom>$noms</label><input type=text>";
+    };
 };
 afficherInput($nomsInput);

@@ -5,9 +5,9 @@ Vous devrez appeler la fonction comme suit : " convertirMajRouge($texte);</p>
 
 <h2>Résultat</h2>
 <?php
+$texte= " mon texte en paramètre";
 function convertirMajRouge($texte){
 $texteMaj = strtoupper($texte);
 echo '<font color="#ff0000">'.$texteMaj.'</font>';
 }
-$texte= " mon texte en paramètre";
 convertirMajRouge($texte);

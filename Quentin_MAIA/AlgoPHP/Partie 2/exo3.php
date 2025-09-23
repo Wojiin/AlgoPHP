@@ -5,4 +5,3 @@
 <h2>Résultat</h2>
 <?php
 echo "<a href='https://www.elan-formation.fr'target=blank>Elan-Formation</url>";
-

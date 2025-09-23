@@ -8,14 +8,16 @@ Vous devrez appeler la fonction comme suit : "afficherTableHTML($capitales)"</p>
 
 <h2>Résultat</h2>
 <?php
-
 $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome");
 ksort($capitales);
 afficherTableHTML($capitales);
 function afficherTableHTML($array){
-    echo"<table border=1><th>Pays </th><th>Capitale</th>";//implémenter les bordures sur le tableau et nommer les en-têtes
+    echo"<table border=1>
+    <th>Pays </th>
+    <th>Capitale</th>";
     foreach($array as $k =>$v){
-        echo "<tr><td>". strtoupper($k)."</td></td><td>". $v."</td></tr>";//Sortie du tableau avec Les pays en MAJ
+        echo "<tr><td>". strtoupper($k)."</td></td>
+        <td>". $v."</td></tr>";
 }
 echo"</table>";    
 }

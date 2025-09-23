@@ -7,14 +7,11 @@ $elements = ["Monsieur","Madame","Mademoiselle"];
 
 <?php
 $elements = ["Monsieur", "Madame", "Mademoiselle"];
-
 function alimenterListeDeroulante($elements) {
-    echo "<select>"; //balise liste déroulante
+    echo "<select>";
     foreach ($elements as $civilite) {
-        echo "<option>$civilite</option>";//balise des choix dans la liste déroulante
+        echo "<option>$civilite</option>";
     } 
     echo "</select>";
 }
-
 alimenterListeDeroulante($elements);
-

@@ -8,14 +8,13 @@ $capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Itali
 <h2>Résultat</h2>
 <?php
 $capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid"];
-
 asort($capitales);
 afficherTableHTML($capitales);
 function afficherTableHTML($array){
-    echo"<table border=1><th>Pays </th><th>Capitale</th><th>Lien Wiki</th>";//implémenter les bordures sur le tableau et nommer les en-têtes
+    echo"<table border=1><th>Pays </th><th>Capitale</th><th>Lien Wiki</th>";
     foreach($array as $k =>$v ){
         $l= "<a href='https://fr.wikipedia.org/wiki/$v'target=blank>Lien</url>";
-        echo "<tr><td>". strtoupper($k)."</td></td><td>". $v."</td><td>. $l.</td></tr>";//Sortie du tableau avec Les pays en MAJ
+        echo "<tr><td>". strtoupper($k)."</td></td><td>". $v."</td><td>. $l.</td></tr>";
 }
 echo"</table>";    
 }
